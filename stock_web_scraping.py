@@ -7,10 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1vlxXfnBlqcWuXcqd3G4rSq1vYds0oFYa
 """
 
-!python --version
 
-!pip install websocket-client
-!pip install websockets
+# !pip install websocket-client
+# !pip install websockets
 
 import websocket
 import time
