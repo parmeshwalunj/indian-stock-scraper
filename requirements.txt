@@ -1,3 +1,4 @@
+pip
 websocket-client
 websockets
 pandas
