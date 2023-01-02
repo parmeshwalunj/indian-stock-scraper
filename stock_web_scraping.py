@@ -87,10 +87,10 @@ def on_message(ws, message):
           new_row = {'timestamp': timestamp, 'symbol': symbol, 'ltp': ltp, 'volume': volume}
           global df
           df = df.append(new_row, ignore_index=True)
-          # if prev_time==0:
-          #   prev_time = timestamp[11:13]
-          # if timestamp[11:13]!=prev_time:
-          # df.to_csv('file1.csv')
+        #   if prev_time==0:
+        #     prev_time = timestamp[11:13]
+        #   if timestamp[11:13]!=prev_time:
+          df.to_csv('./data/file1.csv')
             # prev_time = timestamp[11:13]
 
           # with open('TCS.csv', 'w', newline='') as file:
@@ -119,5 +119,5 @@ def main_func():
     while ws.sock is not None:
         time.sleep(10)
 
-while True:
-  main_func()
+# while True:
+main_func()
